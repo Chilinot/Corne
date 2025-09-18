@@ -60,16 +60,6 @@
             bindings = <&kp ENTER>;
             key-positions = <38 39>;
         };
-
-        boot {
-            bindings = <&bootloader>;
-            key-positions = <24 38>;
-        };
-
-        boot2 {
-            bindings = <&bootloader>;
-            key-positions = <39 35>;
-        };
     };
 
     keymap {
@@ -98,10 +88,10 @@
             //                    |     |     | SPC |   | SPC |     |     |
 
             bindings = <
-&sys_reset  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &trans  &trans          &trans          &trans           &trans  &trans
-&trans      &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans          &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans      &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-                                  &trans        &trans        &trans          &trans  &trans          &trans
+&sys_reset   &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &trans  &trans          &trans          &trans           &trans  &trans
+&trans       &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans          &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&bootloader  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &bootloader
+                                   &trans        &trans        &trans          &trans  &trans          &trans
             >;
         };
 
