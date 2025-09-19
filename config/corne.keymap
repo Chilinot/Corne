@@ -11,54 +11,9 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
-            bindings = <&kp ESC>;
-            key-positions = <0 11>;
-        };
-
-        OpenParenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <6 7>;
-        };
-
-        OpenBrace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <18 19>;
-        };
-
-        OpenBracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <30 31>;
-        };
-
-        CloseParenthasis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <8 7>;
-        };
-
-        CloseBrace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <19 20>;
-        };
-
-        CloseBracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 32>;
-        };
-
-        LessThan {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <3 4>;
-        };
-
-        GreatherThan {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <4 5>;
-        };
-
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <38 39>;
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <41 40>;
         };
     };
 
@@ -106,7 +61,16 @@
 &kp TAB    &kp EXCL    &kp AT             &kp HASH         &kp DOLLAR     &kp PERCENT         &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LESS_THAN  &kp GREATER_THAN    &kp MINUS  &kp EQUAL      &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans      &trans             &trans           &trans         &trans              &kp UNDER  &kp PLUS       &kp LBRC   &kp RBRC  &kp PIPE  &kp DEL
-                                          &kp LGUI         &trans         &trans              &trans     &trans         &kp RALT
+                                          &trans           &trans         &trans              &trans     &trans         &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
